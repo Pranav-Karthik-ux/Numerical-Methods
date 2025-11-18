@@ -9,7 +9,7 @@ nj=0;
 syms x %asigns a amthematical variable x %
 while round(func_false_position,tol)~=0 %tolerance error%
     x_false_position=vpa(xinter(initial_val,final_val));-0-0
-    if exo(x_false_position)>0
+    if exo(x_false_position)>0 %exo is a defined function %
         final_val=x_false_position;
     elseif exo(x_false_position)==0
         break
